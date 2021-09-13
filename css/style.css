@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+   
+}
+h1 {
+    font-family: 'Anton', sans-serif;
+    color: purple;
+
+}
+header {
+    display: flex;
+    justify-content: center;
+    background: whitesmoke;
+    border-bottom: solid 0.4rem rgb(128, 128, 128);
+    text-align: center;
+}
+a {
+    text-decoration: none; 
+}
+/* #wrapper{
+    padding-bottom: 81px;
+    min-height: calc(100% - 81px);
+    position: relative;
+} */
+footer {
+    height: 30rem;
+    width: 100vw;
+    background-color: rgb(100, 100, 100);
+    bottom: 0;
+}
+footer h1 {
+    Color:rgb(75, 75, 75)
+}
+ .center {
+     display: block;
+     margin: auto;
+ }
+ /* Header */
+.menuHeader {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+.menuHeaderItem {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: purple;
+    font-size: 1rem;
+    font-weight: 400 !important;
+    margin: 0.4rem;
+    padding-right: 2rem;
+}
+.nav a {
+    display: block;
+    text-decoration: none;
+    color: purple;
+}
+.nav ul {
+    list-style: none;
+}
+/* Index Cursos */
+.sections {
+    height: 90%;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: purple;
+    background-color: whitesmoke;
+}
+
+.sections p {
+    color: black;
+}
+
+.section {
+    height: 66vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heroCursos {
+   background-image: url(../Img/pista.jpg);
+   background-position: top;
+   background-size: cover;
+}
+
+.heroCursos .contenedor {
+    background-color: rgba(245, 245, 245, 0.801);
+    height: 66%;
+    width: 66%;
+    clip-path: polygon(2% 0%, 100% 0%, 98% 100%, 0% 100%);
+    border-radius: 0.3rem;
+}
+
+
+a.animated-button.thar-three {     
+    padding: 1rem 2rem;
+    color: purple;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid purple;
+    box-shadow: 
+      0.3em 0.3em 0 0 purple,
+      inset 0.3em 0.3em 0 0 purple;
+    transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+}
+a.animated-button.thar-three:hover {
+    color: whitesmoke !important;
+    background-color: transparent;
+    text-shadow:rgb(94, 0, 94);
+    box-shadow: 
+        0 0 0 0 purple,
+        inset 6em 3.5em 0 0 purple;
+}
+
+.dropdown-menu {
+    background-color: rgba(245, 245, 245, 0.801);
+}
+.dropdown-menu li {
+    padding: 0.5rem;
+}
+.contactos {
+    background-color: purple;
+    text-align: center;
+}
+.contactos p {
+    color: whitesmoke;
+    margin-bottom: 0;
+}
+.info {
+    background-color: rgb(231, 210, 207);
+}

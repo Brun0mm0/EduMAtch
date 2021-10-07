@@ -4,83 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
-      rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" integrity="sha512-Cv93isQdFwaKBV+Z4X8kaVBYWHST58Xb/jVOcV9aRsGSArZsgAnFIhMpDoMDcFNoUtday1hdjn0nGp3+KZyyFw==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <!--  -->
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+    <script defer src="script.js"></script>
 </head>
 <body>
 <!-- **** HEADER ***** -->
-<div id="wrapper">
-  <div class="contactos"><p>Datos de contacto</p></div>
-  <header class="pt-3">
-    <div >
-    <h1 class="center">[Logo Edu March]</h1>
-    <nav>
-      <ul class="menuHeader">
-        <li class="menuHeaderItem nav dropdown">
-          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Cursos</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a  href="#">Curso 1</a></li>
-              <li><a  href="#">Curso 2</a></li>
-              <li><a  href="#">Curso 3</a></li>
-              <li><a  href="#">Curso 4</a></li>
-            </ul>
-        </li>
-        <li class="menuHeaderItem">Informacion deportiva</li>
-        <li class="menuHeaderItem">Resultados deportivos</li>
-        <li class="menuHeaderItem">Nosotros</li>
-      </ul>
-  </nav>
-  </div>
-  </header>
-<!-- **** SECTION CURSOS **** -->
-<div class="sections">
-  <section class="heroCursos section">
-    <div class="d-flex flex-column justify-content-center d-flex align-items-center contenedor">
+<header class="header">
+  <div class="banderas">
+   
+      <span class="flag-icon flag-icon-ar"></span>
+      <span class="flag-icon flag-icon-br"></span>
+      <span class="flag-icon flag-icon-cl"></span>
+      <span class="flag-icon flag-icon-co"></span>
+      <span class="flag-icon flag-icon-uy"></span>
+      <span class="flag-icon flag-icon-py"></span>
+ 
 
-      <h2>Cursos</h2>
-      <p>Cursos mas vendidos</p>
-      <div class="py-2 px-5 container">
-        <div class="row py-3 px-5">
-          <div class="col">
-          <a href="#" class=" animated-button thar-three">Curso 1</a>
-        </div>    
-        <div class="col">
-          <a href="#" class=" animated-button thar-three">Curso 2</a></div>
-        </div>
-        <div class="row py-3 px-5">
-          <div class="col">
-          <a href="#" class=" animated-button thar-three">Curso 3</a></div>
-          <div class="col">
-          <a href="#" class=" animated-button thar-three">Curso 4</a></div>
-        </div>
+      <span class="flag-icon flag-icon-es"></span>
+      <span class="flag-icon flag-icon-it"></span>
+      <span class="flag-icon flag-icon-gb"></span>
+      <span class="flag-icon flag-icon-de"></span>
+      <span class="flag-icon flag-icon-ru"></span>
+      <span class="flag-icon flag-icon-fr"></span>
+
+  </div>
+  <nav class="nav">
+  <div class="nav__logo">
+   <h1>EduMatch</h1>
+  </div>
+    <ul class="nav__links">
+      <li class="nav__item">
+        <a class="nav__link" href="#cursos">Cursos</a>
+      </li>
+      <li class="nav__item"><a class="nav__link" href="#info-general">Infomracion General</a></li>
+      <li class="nav__item"><a class="nav__link" href="#convenio">Carrera por convenio</a></li>
+    </ul>
+  </nav>
+  <div class="hero">
+    <div class="hero__logo">
+      <h1>LOGO</h1>
+    </div>  
+    <div class="titulo">
+      <h1 class="titulo__header">Instituto de capacitacion integral</h1>
+      <h2 class="titulo__eslogan">Eslogan de la marca, lorem ipsum dolor sit amet consectetur adipisicing
+         elit.</h2>
     </div>
+  </div>
+</header>
+<!-- Cursos -->
+<main class="cursos" id="cursos">
+  <div class="cursos__container">
+    <div class="cursos__nav">
+      <h1 class="cursos__titulo">Cursos</h1>
+      <hX ><h2 class="cursos__nav-titulo">Areas Academicas</h2></hX>
+      <ul class="cursos__nav-list">
+        <li class="cursos__nav-item"><a class="cursos__nav-item-link-active" href="#cursos">Area 1</a></li>
+        <li class="cursos__nav-item"><a class="cursos__nav-item-link" href="#cursos">Area 2</a></li>
+        <li class="cursos__nav-item"><a class="cursos__nav-item-link" href="#cursos">Area 3</a></li>
+        <li class="cursos__nav-item"><a class="cursos__nav-item-link" href="#cursos">Area 4</a></li>
+        <li class="cursos__nav-item"><a class="cursos__nav-item-link" href="#cursos">Area 5</a></li>
+      </ul>
     </div>
-  </section>
-<!-- **** SECTION Informacion Deportiva **** -->
-  <section class="section d">
-    <h2>Informacion Deportiva</h2>
-    <p>El Instituo Deportivo Edu Match</p>
-  </section>
-<!-- **** SECTION Resultado Deportivos **** -->
-  <section class="section info">
-    <h2>Resultado Deportivos</h2>
-    <p>El Instituo Deportivo Edu Match</p>
-  </section>
+    <div class="cursos__cards">
+      <div class="cursos__card">
+        <div class="cursos__card-curso">
+          <h2>Curso 1</h2>
+          <p>Descripcion del curos, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Deleniti quidem minima magnam qui esse. Totam debitis, ab blanditiis amet soluta eius accusantium dolores maxime rem perferendis nobis, nesciunt tempore quaerat?</p>
+        </div>
+        <div class="cursos__card-fecha">
+          <p>8 Sep</p>
+          <a href="">boton</a>
+          </div>
+        </div>  
+      <hr>
+  
+      <div class="cursos__card">
+        <div class="cursos__card-curso">
+          <h2>Curso 2</h2>
+          <p>Descripcion del curos, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Deleniti quidem minima magnam qui esse. Totam debitis, ab blanditiis amet soluta eius accusantium dolores maxime rem perferendis nobis, nesciunt tempore quaerat?</p>
+        </div>
+        <div class="cursos__card-fecha">
+          <p>8 Sep</p>
+          <a href="">boton</a>
+          </div>
+        </div>  
+        <hr>
+      <div class="cursos__card">
+        <div class="cursos__card-curso">
+          <h2>Curso 3</h2>
+          <p>Descripcion del curos, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Deleniti quidem minima magnam qui esse. Totam debitis, ab blanditiis amet soluta eius accusantium dolores maxime rem perferendis nobis, nesciunt tempore quaerat?</p>
+        </div>
+        <div class="cursos__card-fecha">
+          <p>8 Sep</p>
+          <a href="">boton</a>
+          </div>
+        </div>  
+        <hr>
+      <div class="cursos__card">
+        <div class="cursos__card-curso">
+          <h2>Curso 4</h2>
+          <p>Descripcion del curos, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Deleniti quidem minima magnam qui esse. Totam debitis, ab blanditiis amet soluta eius accusantium dolores maxime rem perferendis nobis, nesciunt tempore quaerat?</p>
+        </div>
+        <div class="cursos__card-fecha">
+          <p>8 Sep</p>
+          <a href="">boton</a>
+          </div>
+        </div>  
+          <hr>
+      <div class="cursos__card">
+        <div class="cursos__card-curso">
+          <h2>Curso 5</h2>
+          <p>Descripcion del curos, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Deleniti quidem minima magnam qui esse. Totam debitis, ab blanditiis amet soluta eius accusantium dolores maxime rem perferendis nobis, nesciunt tempore quaerat?</p>
+        </div>
+        <div class="cursos__card-fecha">
+          <p>8 Sep</p>
+          <a href="">boton</a>
+          </div>
+        </div>  
+          <hr>
+      <div class="cursos__card">
+        <div class="cursos__card-curso">
+          <h2>Curso 6</h2>
+          <p>Descripcion del curos, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Deleniti quidem minima magnam qui esse. Totam debitis, ab blanditiis amet soluta eius accusantium dolores maxime rem perferendis nobis, nesciunt tempore quaerat?</p>
+        </div>
+        <div class="cursos__card-fecha">
+          <p>8 Sep</p>
+          <a href="">boton</a>
+          </div>
+        </div>  
+          <hr>
 </div>
+</main>
+<!-- Info Gral -->
+<section class="info" id="info-general">
+  <div>
+  <p>Seccion Informacion general</p>
 </div>
-<!-- **** FOOTER **** -->
-<footer class="d-flex align-items-center justify-content-center">
-  <h1>FOOTER</h1>
+</section>
+<!-- Carrera por convenio -->
+<section class="convenio" id="convenio">
+  <div>
+    <p>Seccion Carreras por convenio</p>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+  <div>
+  <p>Datos de contacto</p>
+  </div>  
 </footer>
-  <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
- integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+ 
 </body>
 </html>

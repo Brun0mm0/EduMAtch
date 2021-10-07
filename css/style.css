@@ -71,7 +71,7 @@ body {
   height: 100vh;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../Img/header-campo.jpg");
+  background-image: url("../../Img/footer-campo.jpg");
   z-index: 1;
   background-size: cover;
   background-position: center;
@@ -279,13 +279,15 @@ body {
         display: block;
         position: relative;
         border: 2px solid red;
-        box-shadow: 0.3em 0.3em 0 0 red, inset 0.3em 0.3em 0 0 red;
+        box-shadow: 0.3em 0.3em 0 0 red,
+ inset 0.3em 0.3em 0 0 red;
         transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1) 0s; }
         .cursos__card-fecha a:hover {
           color: whitesmoke !important;
           background-color: transparent;
           text-shadow: #5e005e;
-          box-shadow: 0 0 0 0 red, inset 6em 3.5em 0 0 red; }
+          box-shadow: 0 0 0 0 red,
+ inset 6em 3.5em 0 0 red; }
 
 .convenio {
   bottom: 0;

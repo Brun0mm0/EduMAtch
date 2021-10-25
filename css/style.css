@@ -32,12 +32,11 @@ body {
   font-family: 'Montserrat', sans-serif; }
   .titulo__header {
     font-size: 4rem;
+    font-style: italic;
     color: whitesmoke;
-    line-height: normal;
-    text-transform: uppercase; }
+    line-height: normal; }
   .titulo__eslogan {
     font-weight: 500;
-    font-style: italic;
     color: whitesmoke;
     text-align: right; }
 
@@ -71,7 +70,7 @@ body {
   height: 100vh;
   flex-direction: column;
   align-items: center;
-  background-image: url("../../Img/footer-campo.jpg");
+  background-image: url("../../Img/header-campo.jpg");
   z-index: 1;
   background-size: cover;
   background-position: center;
@@ -102,7 +101,7 @@ body {
   background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)); }
   .nav__logo {
     padding-left: 3rem;
-    border-right: 0.15rem solid black;
+    border-right: 0.15rem solid white;
     align-self: center; }
   .nav__links {
     display: flex;
@@ -139,7 +138,7 @@ body {
 .sticky {
   position: fixed;
   background-image: none;
-  background-color: rgba(155, 155, 155, 0.7);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
   border-bottom: solid 1px grey;
   height: 4rem; }
   .sticky__logo {
@@ -162,14 +161,14 @@ body {
     align-items: center; }
     .hero__logo h1 {
       font-size: 3rem; }
+    .hero__logo img {
+      max-width: 100%; }
 
 .titulo {
   grid-column-end: 3;
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .titulo__header {
-    margin-bottom: 3rem; }
 
 .footer {
   background-color: #272727;
@@ -279,15 +278,13 @@ body {
         display: block;
         position: relative;
         border: 2px solid red;
-        box-shadow: 0.3em 0.3em 0 0 red,
- inset 0.3em 0.3em 0 0 red;
+        box-shadow: 0.3em 0.3em 0 0 red, inset 0.3em 0.3em 0 0 red;
         transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1) 0s; }
         .cursos__card-fecha a:hover {
           color: whitesmoke !important;
           background-color: transparent;
           text-shadow: #5e005e;
-          box-shadow: 0 0 0 0 red,
- inset 6em 3.5em 0 0 red; }
+          box-shadow: 0 0 0 0 red, inset 6em 3.5em 0 0 red; }
 
 .convenio {
   bottom: 0;

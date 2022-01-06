@@ -113,20 +113,33 @@ body {
     position: relative; }
     .nav__item:not(:last-child) {
       margin-right: 2rem; }
-  .nav__item::before {
-    content: "";
-    position: absolute;
-    margin-bottom: 0.4rem;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(255, 0, 0, 0.7);
-    height: 32%;
-    width: 100%;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform cubic-bezier(0, 1, 1, 1) 0.7s; }
-  .nav__item:hover::before {
-    transform: scaleX(1); }
+    .nav__item::before {
+      content: "";
+      position: absolute;
+      margin-bottom: 0.4rem;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(255, 0, 0, 0.7);
+      height: 32%;
+      width: 100%;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform cubic-bezier(0, 1, 1, 1) 0.7s; }
+    .nav__item:hover::before {
+      transform: scaleX(1); }
+    .nav__item .nav__submenu {
+      background-image: none;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+      padding-inline: 1rem; }
+      .nav__item .nav__submenu div {
+        display: none;
+        transform: translate(0, -100%);
+        transition: all 0.5s 0.1s; }
+    .nav__item:hover .nav__submenu {
+      position: absolute; }
+      .nav__item:hover .nav__submenu div {
+        display: block;
+        transform: translate(0, 0); }
   .nav__link {
     text-decoration: none;
     padding: 0 0.2rem 0 0.5rem;
@@ -134,6 +147,21 @@ body {
     color: white;
     position: relative;
     z-index: 10; }
+  .nav__submenu div li {
+    list-style: none;
+    line-height: 1.5rem;
+    cursor: pointer; }
+    .nav__submenu div li:not(:last-child) {
+      margin-bottom: 1rem; }
+  .nav__submenu div li a {
+    font-size: 1rem;
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    color: white; }
+    .nav__submenu div li a:hover {
+      font-weight: 400;
+      font-style: italic; }
 
 .sticky {
   position: fixed;
@@ -251,6 +279,7 @@ body {
   .cursos__card {
     display: flex;
     justify-content: space-between;
+    height: 15rem;
     width: 100%;
     padding: 1rem;
     background-color: white; }
@@ -286,21 +315,47 @@ body {
           text-shadow: #5e005e;
           box-shadow: 0 0 0 0 red, inset 6em 3.5em 0 0 red; }
 
-.convenio {
+.docentes {
   bottom: 0;
-  padding: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 5rem;
   position: relative;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center; }
-  .convenio div {
-    border: 2px gray dashed;
+  justify-content: center; }
+  .docentes__container {
     height: 100%;
-    width: 100%;
+    width: 85rem;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    justify-content: space-between; }
+  .docentes .cursos__cards {
+    flex-direction: column;
+    top: 0;
+    height: 100%;
+    width: 75%; }
+    .docentes .cursos__cards .cursos__card-curso {
+      flex-direction: column;
+      width: auto; }
+    .docentes .cursos__cards .cursos__card-fecha {
+      height: 100%;
+      padding: 1rem;
+      width: auto; }
+  .docentes__datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%; }
+    .docentes__datos img {
+      max-width: 75%; }
+    .docentes__datos-texto h4 {
+      font-size: 1.2rem; }
+    .docentes__datos-texto h5 {
+      font-size: 1rem; }
+    .docentes__datos-texto p {
+      font-size: 0.8rem;
+      margin-bottom: 2rem; }
 
 .info {
   bottom: 0;

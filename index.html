@@ -13,13 +13,100 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
     <!--  -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>EduMatch</title>
     <script defer src="script.js"></script>
 </head>
 <body>
-<!-- **** HEADER ***** -->
+<div class="navigation">
+  <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+  <label for="navi-toggle" class="navigation__button">
+    <!-- <span>&nbsp;</span> -->
+  </label>
+
+  <div class="navigation__background">&nbsp;</div>
+
+    <div class="navigation__bar">
+      <!-- logo -->
+      <div class="navigation__logo">
+       <img src="./img/logo.svg" alt="">
+       <h1>EduMatch</h1>
+      </div>
+      <!-- nav -->
+      <nav class="navigation__nav">
+
+        <ul class="navigation__links">
+            <!-- Cursos -->
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Cursos</a>
+              <ul class="navigation__submenu">
+                <div>
+                  <li class=""><a href="#cursos">Administración y Contabilidad</a></li>
+                  <li class=""><a href="#cursos">Interés General</a></li>
+                  <li class=""><a href="#cursos">Comunicaión y Publicidad</a></li>
+                  <li class=""><a href="#cursos">Deportes</a></li>
+                  <li class=""><a href="#cursos">Derecho</a></li>
+                  <li class=""><a href="#cursos">Economía</a></li>
+                  <li class=""><a href="#cursos">Gastronomía</a></li>
+                  <li class=""><a href="#cursos">Gestión Tributaria</a></li>
+                  <li class=""><a href="#cursos">Idiomas</a></li>
+                  <li class=""><a href="#cursos">Informática</a></li>
+                  <li class=""><a href="#cursos">Marketing y Comercio Exterior</a></li>
+                  <li class=""><a href="#cursos">Periodismo</a></li>
+                </div>
+              </ul>
+          </li>
+            <!-- Areas Academiacs -->
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Areas Academicas</a>
+              <ul class="navigation__submenu">
+                <div>
+                  <li class=""><a href="#docentes">Derecho Civil y Comercial</a>
+                    <span class="nombre"><p>Dr. Alejandro Taraborelli</p></span>
+                  </li>
+                  <li class=""><a href="#docentes">Derechos Humanos</a>
+                    <span class="nombre"><p>Dra. Antonella Biglieri</p></span>
+                  </li>
+                  <li class=""><a href="#docentes">Derecho administrativo</a>
+                    <span class="nombre"><p>Dr. Alberto Biglieri</p></span>
+                  </li>
+                  <li class=""><a href="#docentes">Derecho y Deporte</a>
+                    <span class="nombre"><p>Dr. José Emilio Jozami</p></span>
+                  </li>
+                  <li class=""><a href="#docentes">Genero y Diversidades</a>
+                    <span class="nombre"><p>Dra. Ana Karina Giovinazzo</p></span>
+                  </li>
+                  <li class=""><a href="#docentes">Genero y Diversidades</a>
+                    <span class="nombre"><p>Dra. Ana Karina Giovinazzo</p></span>
+                  </li>
+                  <li class=""><a href="#docentes">Genero y Diversidades</a>
+                    <span class="nombre"><p>Dra. Ana Karina Giovinazzo</p></span>
+                  </li>
+                  <li class=""><a href="#docentes">Administración y Contabilidad</a>
+                  </li>
+                  <li class=""><a href="#docentes">Economía y Finanzas</a>
+                  </li>
+                  <li class=""><a href="#docentes">Marketing</a>
+                    <span class="nombre"><p>Lic. Ramiro Leirao</p></span>
+                  </li>
+                  <li class=""><a href="#docentes">Ciencias del Deporte</a>
+                    <span class="nombre"><p>Lic. Rodrigo Noriega</p></span>
+                  </li>
+                  <li class=""><a href="#docentes">Interés Gral</a>
+                    <span class="nombre"><p>Dr. José Antonio Rosa</p></span>
+                  </li>
+                  <li class=""><a href="#docentes">Director Gral.</a>
+                    <span class=""><p>Lic. Rodrigo Noriega</p></span>
+                  </li>
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  </div>
+   <!-- **** HEADER ***** --> 
 <header class="header">
-  <div class="banderas">
+  <!-- <div class="banderas">
    
       <span class="flag-icon flag-icon-ar"></span>
       <span class="flag-icon flag-icon-br"></span>
@@ -39,47 +126,8 @@
       <span class="flag-icon flag-icon-ru"></span>
       <span class="flag-icon flag-icon-fr"></span>
 
-  </div>
-  <nav class="nav">
-  <div class="nav__logo">
-   <h1>EduMatch</h1>
-  </div>
-    <ul class="nav__links">
-      <li class="nav__item">
-        <a class="nav__link" href="#cursos">Cursos</a>
-          <ul class="nav__submenu">
-            <div>
-            <li class=""><a href="#cursos">Administración y Contabilidad</a></li>
-            <li class=""><a href="#cursos">Capacitación General</a></li>
-            <li class=""><a href="#cursos">Comunicaión y Publicidad</a></li>
-            <li class=""><a href="#cursos">Deportes</a></li>
-            <li class=""><a href="#cursos">Derecho</a></li>
-            <li class=""><a href="#cursos">Economía</a></li>
-            <li class=""><a href="#cursos">Gastronomía</a></li>
-            <li class=""><a href="#cursos">Gestión Tributaria</a></li>
-            <li class=""><a href="#cursos">Idiomas</a></li>
-            <li class=""><a href="#cursos">Informática</a></li>
-            <li class=""><a href="#cursos">Marketing y Comercio Exterior</a></li>
-            <li class=""><a href="#cursos">Periodismo</a></li>
-            <li class=""><a href="#cursos">Talleres</a></li>
-          </div>
-          </ul>
-      </li>
-      <li class="nav__item"><a class="nav__link" href="#info-general">Información General</a></li>
-      <li class="nav__item">
-        <a class="nav__link" href="#docentes">Cuerpo Docente</a>
-        <ul class="nav__submenu">
-          <div>
-          <li class=""><a href="#docentes">Nombre y Apelldio</a></li>
-          <li class=""><a href="#docentes">Nombre y Apelldio</a></li>
-          <li class=""><a href="#docentes">Nombre y Apelldio</a></li>
-          <li class=""><a href="#docentes">Nombre y Apelldio</a></li>
-          <li class=""><a href="#docentes">Nombre y Apelldio</a></li>
-        </div>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+  </div> -->
+ 
   <div class="hero">
     <div class="hero__logo">
       <img src="Img/Logo-02.png" alt="logo">
@@ -94,13 +142,13 @@
 
       <!-- Menu -->
 <main class="cursos" id="cursos">
+  <h1 class="cursos__titulo">Cursos</h1>
   <div class="cursos__container">
     <div class="cursos__nav">
-      <h1 class="cursos__titulo">Cursos</h1>
       <hX ><h2 class="cursos__nav-titulo">Areas Academicas</h2></hX>
       <ul class="cursos__nav-list">
         <li class="cursos__nav-item"><a class="cursos__nav-item-link" href="#cursos">Administración y Contabilidad</a></li>
-        <li class="cursos__nav-item"><a class="cursos__nav-item-link" href="#cursos">Capacitación General</a></li>
+        <li class="cursos__nav-item"><a class="cursos__nav-item-link" href="#cursos">Interés General</a></li>
         <li class="cursos__nav-item"><a class="cursos__nav-item-link" href="#cursos">Comunicaión y Publicidad</a></li>
         <li class="cursos__nav-item"><a class="cursos__nav-item-link" href="#cursos">Deportes</a></li>
         <li class="cursos__nav-item"><a class="cursos__nav-item-link" href="#cursos">Derecho</a></li>

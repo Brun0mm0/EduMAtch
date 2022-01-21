@@ -229,7 +229,8 @@ body {
     overflow-y: scroll; }
     @media (max-width: 900px) {
       .cursos__cards {
-        overflow: hidden; } }
+        overflow: hidden;
+        margin: 0; } }
     .cursos__cards hr {
       border: none;
       height: 1px;
@@ -273,6 +274,10 @@ body {
           background-color: transparent;
           text-shadow: #5e005e;
           box-shadow: 0 0 0 0 red, inset 6em 3.5em 0 0 red; }
+    @media (max-width: 900px) {
+      .cursos__card {
+        flex-direction: column;
+        height: auto; } }
 
 .docentes {
   bottom: 0;
@@ -300,6 +305,9 @@ body {
       height: 100%;
       padding: 1rem;
       width: auto; }
+    @media (max-width: 900px) {
+      .docentes .cursos__cards {
+        display: none; } }
   .docentes__datos {
     display: flex;
     flex-direction: column;
@@ -315,6 +323,10 @@ body {
     .docentes__datos-texto p {
       font-size: 0.8rem;
       margin-bottom: 2rem; }
+    @media (max-width: 900px) {
+      .docentes__datos {
+        width: 100%;
+        padding: 0 10px; } }
 
 .info {
   bottom: 0;
@@ -367,10 +379,6 @@ body {
 .navigation__checkbox:checked ~ .navigation__background {
   height: 100vh; }
 
-@media (max-width: 1200px) {
-  .navigation__checkbox:checked ~ .navigation__nav {
-    display: block; } }
-
 .navigation__bar {
   position: absolute;
   top: 0;
@@ -379,6 +387,9 @@ body {
   justify-content: start;
   align-items: center;
   z-index: 1500; }
+  @media (max-width: 1200px) {
+    .navigation__bar {
+      width: 100vw; } }
 
 .navigation__logo {
   width: 25rem;
@@ -391,21 +402,16 @@ body {
     display: none;
     max-width: 2rem;
     margin-right: 1rem; }
-
-@media (max-width: 1200px) {
-  .navigation__nav {
-    display: none;
-    z-index: 1600; } }
+  @media (max-width: 1200px) {
+    .navigation__logo {
+      border: 0; } }
 
 .navigation__links {
-  display: inline-block;
-  display: flex; }
-  @media (max-width: 1200px) {
-    .navigation__links {
-      width: 0; } }
+  position: relative;
+  display: flex;
+  list-style: none; }
 
 .navigation__item {
-  display: inline-block;
   position: relative; }
   .navigation__item:not(:last-child) {
     margin-right: 2rem; }
@@ -441,7 +447,6 @@ body {
 .navigation__link {
   text-decoration: none;
   padding: 0 0.2rem 0 0.5rem;
-  display: inline-block;
   color: white;
   position: relative;
   z-index: 10; }
@@ -468,7 +473,11 @@ body {
 @media (max-width: 1200px) {
   .navigation {
     padding: 0rem;
-    width: 100%; } }
+    width: 100%; }
+    .navigation__links {
+      width: 5px; }
+    .navigation__checkbox:checked ~ .navigation__bar > .navigation__links {
+      width: 40px; } }
 
 .nombre {
   position: absolute;
